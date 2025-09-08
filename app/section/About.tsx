@@ -39,15 +39,13 @@ export const AboutSection = () => {
           </CometCard>
         </div>
 
-        <div className="text-white text-right flex flex-col justify-center space-y-6">
+        <div className="text-white text-left flex flex-col justify-center space-y-6">
+          <h1 className="font-bold text-2xl leading-loose border-b-1">FrontEnd Developer || UI/UX Designer</h1>
           <p className="leading-normal">
-            Saya seorang web developer dengan pengalaman di React, Next.js, dan Tailwind CSS. Fokus saya adalah membangun aplikasi web yang
-            modern, responsif, dan memiliki performa tinggi.
+            A UI/UX designer and web developer from Indonesia, a recent graduate with a degree in Computer Science who is passionate about
+            creating seamless user experiences and building modern, responsive websites.
           </p>
-          <p className="leading-normal">
-            Saya senang mempelajari teknologi baru dan selalu terbuka untuk tantangan yang bisa mengasah kemampuan saya di bidang front-end
-            maupun fullstack development.
-          </p>
+
           <div>
             <a
               href="/CV_M. Hasan Farikhi.pdf"
