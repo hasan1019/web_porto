@@ -12,8 +12,8 @@ export default function HeroButton(): JSX.Element {
   return (
     <button
       onClick={handleClick}
-      className="mt-4 px-6 py-2 outline-3 outline-neutral-50 text-white bg-black rounded-2xl transition-all duration-300 hover:bg-white/90 hover:text-black hover:outline-transparent">
-      See More
+      className="mt-4 inline-block px-8 py-4 bg-black text-white border-1 border-white font-semibold rounded-3xl hover:bg-white hover:text-black transition-all duration-300">
+      SEE MORE
     </button>
   );
 }

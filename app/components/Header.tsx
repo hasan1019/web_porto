@@ -7,8 +7,8 @@ const menuItems = [
 ];
 
 const socialItems = [
-  { label: "GitHub", link: "https://github.com" },
-  { label: "LinkedIn", link: "https://linkedin.com" },
+  { label: "GitHub", link: "https://github.com/hasan1019" },
+  { label: "LinkedIn", link: "https://linkedin.com/in/hasanfarikhi/" },
 ];
 
 export function Header() {

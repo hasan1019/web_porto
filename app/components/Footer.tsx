@@ -12,14 +12,14 @@ export const Footer = () => {
         {/* Social Icons */}
         <div className="flex space-x-6 mt-4 sm:mt-0">
           <a
-            href="https://github.com/username"
+            href="https://github.com/hasan1019"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-300 hover:text-white transition">
             <FaGithub size={22} />
           </a>
           <a
-            href="https://linkedin.com/in/username"
+            href="https://linkedin.com/in/hasanfarikhi/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-300 hover:text-white transition">

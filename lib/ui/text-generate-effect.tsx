@@ -52,7 +52,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn(className)}>
       <div className="mt-4 text-justify">
-        <div className=" text-white text-md leading-snug tracking-wide">{renderWords()}</div>
+        <div className=" text-white text-xl leading-snug tracking-wide">{renderWords()}</div>
       </div>
     </div>
   );
