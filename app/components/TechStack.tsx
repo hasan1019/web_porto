@@ -1,45 +1,68 @@
 import React from "react";
-import { SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiFigma, SiHtml5, SiCss3, SiGithub } from "react-icons/si";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiFigma,
+  SiHtml5,
+  SiCss3,
+  SiGithub,
+} from "react-icons/si";
 import { FloatingDock } from "@/lib/ui/floating-dock";
 
 export function TechStack() {
   const links = [
     {
       title: "React",
-      icon: <SiReact className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+      icon: (
+        <SiReact className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
       href: "#",
     },
 
     {
       title: "NextJs",
-      icon: <SiNextdotjs className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+      icon: (
+        <SiNextdotjs className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
       href: "#",
     },
     {
       title: "TailwindCSS",
-      icon: <SiTailwindcss className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+      icon: (
+        <SiTailwindcss className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
       href: "#",
     },
 
     {
       title: "Github",
-      icon: <SiGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+      icon: (
+        <SiGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
       href: "#",
     },
 
     {
       title: "Figma",
-      icon: <SiFigma className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+      icon: (
+        <SiFigma className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
       href: "#",
     },
     {
       title: "HTML5",
-      icon: <SiHtml5 className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+      icon: (
+        <SiHtml5 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
       href: "#",
     },
     {
       title: "CSS3",
-      icon: <SiCss3 className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+      icon: (
+        <SiCss3 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
       href: "#",
     },
   ];

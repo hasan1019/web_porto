@@ -3,6 +3,12 @@ import { projects } from "@/data/portofolio";
 import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/lib/ui/accordion";
 
 export default function ProjectDetailPage() {
   const { id } = useParams(); // ambil slug dari url
@@ -64,6 +70,22 @@ export default function ProjectDetailPage() {
           <p className="text-base leading-relaxed text-neutral-400">
             {project.details}
           </p>
+          <Accordion type="single" collapsible className="w-full space-y-2">
+            {project.faqs?.map((faq, i) => (
+              <AccordionItem
+                key={i}
+                value={`item-${i}`}
+                className="boder-b-1 border-neutral-100">
+                <AccordionTrigger className="text-lg font-medium">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-neutral-400">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+          "
         </div>
       </div>
     </main>
