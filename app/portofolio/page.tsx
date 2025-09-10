@@ -3,7 +3,6 @@
 import { Footer } from "../components/Footer";
 import { Header } from "@/app/components/Header";
 import { projects } from "@/data/portofolio";
-import { group } from "console";
 import Link from "next/link";
 
 export default function PortfolioPage() {
@@ -23,11 +22,13 @@ export default function PortfolioPage() {
               key={project.id}
               href={`/portofolio/${project.id}`}
               className={`relative overflow-hidden rounded-2xl p-20 ${project.bgColor} ${project.span ?? ""} group`}>
-              <img
-                src={project.image}
-                alt={project.tittle}
-                className="absolute inset-0 w-full h-full object-cover scale-100 transition-transform duration-500 group-hover:scale-110 "
-              />
+              {project.images && project.images.length > 0 && (
+                <img
+                  src={project.images[0].src}
+                  alt={project.tittle}
+                  className="absolute inset-0 w-full h-full object-cover scale-100 transition-transform duration-500 group-hover:scale-110 "
+                />
+              )}
               <div className=" absolute inset-0 bg-black/60 transition-opacity duration-500 group-hover:opacity-0"></div>
               <div className="z-10 relative flex flex-col justify-center items-center text-center p-6 text-neutral-200 transition-opacity duration-500 group-hover:opacity-0">
                 <h3 className="text-xl font-bold">{project.tittle}</h3>
